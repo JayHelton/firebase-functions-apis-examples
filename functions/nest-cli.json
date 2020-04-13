@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/functions",
+  "sourceRoot": "apps/functions/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/functions/tsconfig.app.json"
+  },
+  "projects": {
+    "functions": {
+      "type": "application",
+      "root": "apps/functions",
+      "entryFile": "main",
+      "sourceRoot": "apps/functions/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/functions/tsconfig.app.json"
+      }
+    },
+    "nestjs-api": {
+      "type": "application",
+      "root": "apps/nestjs-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-api/tsconfig.app.json"
+      }
+    }
+  }
+}
